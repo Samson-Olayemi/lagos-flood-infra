@@ -9,3 +9,19 @@ data/interim/*
 .env
 .DS_Store
 *.egg-info/
+
+# Field data and photos: do NOT commit before the privacy review (PRD sections 20, 21).
+# After review, add a reviewed file on purpose with: git add -f <file>
+data/processed/*
+!data/processed/.gitkeep
+data/photos/
+data/field_exports/
+*.jpg
+*.jpeg
+*.heic
+*.JPG
+*.JPEG
+*.HEIC
+
+# Private working notes: never commit (the repo is public)
+PROJECT_STATE.md
