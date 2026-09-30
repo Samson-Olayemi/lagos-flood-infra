@@ -15,7 +15,6 @@ differs from existing Lagos-focused work).
 ## Status
 
 Phases 0-1 (setup, literature audit) in progress. Pilot field study planned for 3-4 Oct 2026.
-Current status, decisions and open questions are in `PROJECT_STATE.md`.
 The full plan is in `docs/phase_timeline.md`.
 
 ## Repository structure
@@ -56,6 +55,8 @@ pip install -r requirements.txt
   `python src/build_xlsform.py`. Do not edit it by hand.
 - `python src/clean.py <export.csv>`: checks a field export against the data dictionary.
   It reports problems. It never changes values.
+- `python src/data_ingest.py --export <export.csv> --photos <photo folder>`: runs the check, writes
+  a typed table and a GeoPackage under `data/interim/`, and links photos to sites. Local only.
 
 ## Reproducibility
 
